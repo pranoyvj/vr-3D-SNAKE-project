@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
-        showHighscore = false;
+        showHighscore = true;
         int i = 0;
         while (i < 25)
         {
@@ -162,6 +162,7 @@ public class PlayerMovement : MonoBehaviour
 
             Debug.Log("Collision with wall or piece detected");
             //Application.LoadLevel(Application.loadedLevel);
+			Application.Quit();
             gameover = true;
             isMoving = false;
 
@@ -186,14 +187,14 @@ public class PlayerMovement : MonoBehaviour
             GUILayout.Label("Press Space to Start");
 
         }
-        if (!showHighscore && GUILayout.Button("Show Highscore"))
-        {
-            showHighscore = true;
-        }
-        else if (showHighscore && GUILayout.Button("Hide Highscore"))
-        {
-            showHighscore = false;
-        }
+        //if (!showHighscore && GUILayout.Button("Show Highscore"))
+        //{
+            //showHighscore = true;
+        //}
+        //else if (showHighscore && GUILayout.Button("Hide Highscore"))
+        //{
+          //  showHighscore = false;
+       // }
 
         if (showHighscore)
         {
@@ -201,9 +202,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (gameover)
         {
-            GUI.Label(new Rect(200, 200, Screen.width / 2, Screen.height / 2), "Game Over!");
-
-            GUI.Label(new Rect(200, 250, 200, 550), "Press Enter to re-start the game");
+			GUI.Label(new Rect(600, 600, 600, 600 ), "Game Over!");
+			
+			GUI.Label(new Rect(900, 700, 400, 400), "Press Enter to re-start the game");
 			pickUpCount = 0;
         }
     }
