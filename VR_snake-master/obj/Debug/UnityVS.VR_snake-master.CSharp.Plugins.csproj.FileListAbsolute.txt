@@ -1,0 +1,13 @@
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\VR_snake-master-22-05\VR_snake-master\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\VR_snake-master-22-05\VR_snake-master\obj\Debug\UnityVS.VR_snake-master.CSharp.Plugins.csprojResolveAssemblyReference.cache
+D:\VR_snake-master-22-05\VR_snake-master\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\VR_snake-master-22-05\VR_snake-master\obj\Debug\Assembly-CSharp-firstpass.pdb

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -9,18 +11,28 @@ public class PlayerMovement : MonoBehaviour
     private int pickUpCount; // number of collected pickUps
     public GameObject piece; // body of the snake
     public GameObject lastPiece;
+    public GameObject MenuText;
+    public GameObject MenuPanel;
     public bool showHighscore;
-    public bool gameover = false;
+    public bool gameover;
     private bool isMoving = false;
     public int speed = 1;
     public bool lookUp = false;
     public bool lookDown = false;
+    public GameObject gameOver;
+    public bool showMenu = true;
+
+
+
 
     //Methods
     // Use this for initialization
     void Start()
     {
-
+        MenuText = GameObject.FindGameObjectWithTag("MenuText");
+        MenuPanel = GameObject.FindGameObjectWithTag("Panel");
+        gameOver = GameObject.FindGameObjectWithTag("GameOver");
+        gameOver.SetActive(false);
         showHighscore = true;
         int i = 0;
         while (i < 25)
@@ -44,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         if (isMoving)
         {
-            
+
             if (Input.GetKeyDown(KeyCode.UpArrow) && lookDown)
             {
                 transform.Rotate(new Vector3(-90, 0, 0));
@@ -117,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.Rotate(new Vector3(0, 90, 0));
             }
-            
+
         }
     }
     // Update is called once per frame
@@ -157,12 +169,12 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
-		if (col.gameObject.name == "Piece" || col.gameObject.name == "Wall" || col.gameObject.name == "Cube" || col.gameObject.name == "Cube 1" || col.gameObject.name == "Cube 2" )
+        if (col.gameObject.name == "Piece" || col.gameObject.name == "Wall" || col.gameObject.name == "Cube" || col.gameObject.name == "Cube 1" || col.gameObject.name == "Cube 2")
         {
 
             Debug.Log("Collision with wall or piece detected");
             //Application.LoadLevel(Application.loadedLevel);
-			Application.Quit();
+
             gameover = true;
             isMoving = false;
 
@@ -181,32 +193,63 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnGUI()
     {
-        if (!isMoving)
+        GUI.color = Color.white;
+        GUIStyle customButton = new GUIStyle("button");
+        customButton.fontSize = 25;
+        if (showMenu)
         {
+            // Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
+            if (GUI.Button(new Rect(800, 450, 200, 50), "Easy Mode",customButton))
+            {
+                GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = true;
+                showMenu = false;
+                MenuText.SetActive(false);
+                MenuPanel.SetActive(false);
+            }
 
-            GUILayout.Label("Press Space to Start");
+            // Make the second button.
+            if (GUI.Button(new Rect(800, 530, 200, 50), "Hard Mode",customButton))
+            {
+                GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = false;
+                showMenu = false;
+                MenuText.SetActive(false);
+                MenuPanel.SetActive(false);
+            }
+            //GameObject.FindGameObjectWithTag("MenuText")
+        }
+        //}
+
+        if (!isMoving && gameover == false)
+        {
+            if (!showMenu)
+            {
+                GUI.Label(new Rect(800, 200, 300, 600), "Press Space to Start");
+                //GUILayout.Label("Press Space to Start".ToString());
+            }
+
+        }
+        if (!isMoving && gameover == true)
+        {
+            //Time.timeScale = 0; 
+            pickUpCount = 0;
+            gameOver.SetActive(true);
+
 
         }
         //if (!showHighscore && GUILayout.Button("Show Highscore"))
         //{
-            //showHighscore = true;
+        // showHighscore = true;
         //}
-        //else if (showHighscore && GUILayout.Button("Hide Highscore"))
-        //{
-          //  showHighscore = false;
-       // }
+        else if (showHighscore && GUILayout.Button("Hide Highscore"))
+        {
+            showHighscore = false;
+        }
 
         if (showHighscore)
         {
             GUILayout.Label("Pick Ups: " + PlayerPrefs.GetInt("pickUp"));
         }
-        if (gameover)
-        {
-			GUI.Label(new Rect(600, 600, 600, 600 ), "Game Over!");
-			
-			GUI.Label(new Rect(900, 700, 400, 400), "Press Enter to re-start the game");
-			pickUpCount = 0;
-        }
+
     }
 
 }
