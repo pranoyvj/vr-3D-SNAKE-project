@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\vr project\VR_snake-master-28june updated latest new\VR_snake-master\Assets\Scripts\PlayerMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraMovement.cs">
     <Files>
-      <File FileName="..\..\..\vr project\VR_snake-master-28june updated latest new\VR_snake-master\Assets\Scripts\PlayerMovement.cs" Line="221" Column="3" />
+      <File FileName="Assets\Scripts\CameraMovement.cs" Line="25" Column="29" />
+      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="106" Column="14" />
+      <File FileName="Assets\Scripts\SmoothFollow.cs" Line="35" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

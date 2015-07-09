@@ -1,0 +1,9 @@
+1, cube direction and snake direction should be same --- done but need to verify
+
+
+2, rotation way of cube--------------------------------- done but need to verify
+
+3, game controller thinking
+
+4, bug 
+

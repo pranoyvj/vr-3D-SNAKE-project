@@ -1,3 +1,8 @@
-version here is of 28 june 
+28 june updated by pran ----- folder 'snake master 22-05' ....deleted
 
-Updated version is of july 8 on Desktop
+29 june updated by pran ----- folder 'snake master 28 june updated latest..'
+
+8 july  updated by pran ----- work done on folder 'snake master 28 june updated latest..'
+			----- added new simple flow for simple mode! (now gameplay for simple mode is better! try it out!)      
+			----- rotation issue solved
+			----- hard mode now playable....navigational issues solved!

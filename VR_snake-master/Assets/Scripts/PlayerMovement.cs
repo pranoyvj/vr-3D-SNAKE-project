@@ -199,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
         if (showMenu)
         {
             // Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
-            if (GUI.Button(new Rect(800, 450, 200, 50), "Easy Mode",customButton))
+            if (GUI.Button(new Rect(840, 450, 200, 50), "Easy Mode",customButton))
             {
                 GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = true;
                 showMenu = false;
@@ -208,7 +208,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             // Make the second button.
-            if (GUI.Button(new Rect(800, 530, 200, 50), "Hard Mode",customButton))
+            if (GUI.Button(new Rect(840, 530, 200, 50), "Hard Mode",customButton))
             {
                 GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = false;
                 showMenu = false;
