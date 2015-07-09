@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\vr project\VR_snake-master-28june updated latest new\VR_snake-master\Assets\Scripts\PlayerMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="255" Column="12" />
-      <File FileName="Assets\Scripts\CameraMovement.cs" Line="15" Column="67" />
+      <File FileName="..\..\..\vr project\VR_snake-master-28june updated latest new\VR_snake-master\Assets\Scripts\PlayerMovement.cs" Line="221" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
