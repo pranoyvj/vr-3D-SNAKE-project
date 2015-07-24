@@ -16,39 +16,39 @@ public class CameraMovement : MonoBehaviour
     {
 
         if (!easyMode)
-        {
-            if (Input.GetKeyUp(KeyCode.UpArrow)) transform.Rotate(new Vector3(90, 0, 0));
-            if (Input.GetKeyUp(KeyCode.DownArrow)) transform.Rotate(new Vector3(-90, 0, 0));
-            if (Input.GetKeyUp(KeyCode.LeftArrow)) transform.Rotate(new Vector3(0, -90, 0));
-            if (Input.GetKeyUp(KeyCode.RightArrow)) transform.Rotate(new Vector3(0, 90, 0));
-        }
-        // if you want to navigate wrt users input , for simple mode..in this no need for separate navigation for external cube
-
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Keypad8))
+		{	if (Input.GetKeyDown(KeyCode.Keypad8))
 			{transform.Rotate(new Vector3(90, 0, 0));
 			}
 			if (Input.GetKeyUp(KeyCode.Keypad8))
 			{transform.Rotate(new Vector3(-90, 0, 0));
 			}
-
+			
 			if (Input.GetKeyDown(KeyCode.Keypad2)) 
 			{transform.Rotate(new Vector3(-90, 0, 0));
 			}
 			if (Input.GetKeyUp(KeyCode.Keypad2)) 
 			{transform.Rotate(new Vector3(90, 0, 0));
 			}
-
+			
 			if (Input.GetKeyDown(KeyCode.Keypad4)) {
 				transform.Rotate(new Vector3(0, 90, 0));}
 			if (Input.GetKeyUp(KeyCode.Keypad4)) {
 				transform.Rotate(new Vector3(0, -90, 0));}
-
+			
 			if (Input.GetKeyDown(KeyCode.Keypad6)) 
 			{transform.Rotate(new Vector3(0, -90, 0));}
 			if (Input.GetKeyUp(KeyCode.Keypad6)) 
 			{transform.Rotate(new Vector3(0, 90, 0));}
+            
+        }
+        // if you want to navigate wrt users input , for simple mode..in this no need for separate navigation for external cube
+
+        else
+        {
+			if (Input.GetKeyUp(KeyCode.UpArrow)) transform.Rotate(new Vector3(90, 0, 0));
+			if (Input.GetKeyUp(KeyCode.DownArrow)) transform.Rotate(new Vector3(-90, 0, 0));
+			if (Input.GetKeyUp(KeyCode.LeftArrow)) transform.Rotate(new Vector3(0, -90, 0));
+			if (Input.GetKeyUp(KeyCode.RightArrow)) transform.Rotate(new Vector3(0, 90, 0));
         }
     }
 
