@@ -6,3 +6,5 @@
 			----- added new simple flow for simple mode! (now gameplay for simple mode is better! try it out!)      
 			----- rotation issue solved
 			----- hard mode now playable....navigational issues solved!
+
+11 august pran 		----- spacemouse! stuff added
