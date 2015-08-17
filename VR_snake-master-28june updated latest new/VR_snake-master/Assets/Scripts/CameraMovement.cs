@@ -27,8 +27,19 @@ public class CameraMovement : MonoBehaviour
 		CurrentY = SpaceNavigator.Rotation.y * 1000 * unity;
 		CurrentZ = SpaceNavigator.Rotation.z * 1000 * unity;
 
-        if (!easyMode)
+		if (!easyMode)//hard mode integrated!
 		{	//for kezboard
+			if (Input.GetKeyUp(KeyCode.UpArrow)) transform.Rotate(new Vector3(90, 0, 0));
+			if (Input.GetKeyUp(KeyCode.DownArrow)) transform.Rotate(new Vector3(-90, 0, 0));
+			if (Input.GetKeyUp(KeyCode.LeftArrow)) transform.Rotate(new Vector3(0, -90, 0));
+			if (Input.GetKeyUp(KeyCode.RightArrow)) transform.Rotate(new Vector3(0, 90, 0));
+			
+			
+			//the problem with spacenavigator was the rotation keeps happening if condition is satisfied. due to this flickering effect takes place!
+			// if you want to navigate wrt users input , for simple mode..in this no need for separate navigation for external cube
+			
+		}else //easy mode
+		{ 
 			if (Input.GetKeyDown(KeyCode.Keypad8))
 			{transform.Rotate(new Vector3(90, 0, 0));
 			}
@@ -73,16 +84,6 @@ public class CameraMovement : MonoBehaviour
 			if (CurrentY < -400 && CurrentY > -460 )
 			{	transform.Rotate(new Vector3(0, -90, 0));
 				wait();	}
-
-            //the problem with spacenavigator was the rotation keeps happening if condition is satisfied. due to this flickering effect takes place!
-        	// if you want to navigate wrt users input , for simple mode..in this no need for separate navigation for external cube
-		       
-		}else
-		{ 
-			if (Input.GetKeyUp(KeyCode.UpArrow)) transform.Rotate(new Vector3(90, 0, 0));
-			if (Input.GetKeyUp(KeyCode.DownArrow)) transform.Rotate(new Vector3(-90, 0, 0));
-			if (Input.GetKeyUp(KeyCode.LeftArrow)) transform.Rotate(new Vector3(0, -90, 0));
-			if (Input.GetKeyUp(KeyCode.RightArrow)) transform.Rotate(new Vector3(0, 90, 0));
 			
 			
 		}

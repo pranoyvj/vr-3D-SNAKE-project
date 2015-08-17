@@ -203,7 +203,7 @@ public class PlayerMovement : MonoBehaviour
             // Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
             if (GUI.Button(new Rect(840, 450, 400, 50), "Integrated Control Mode",customButton))
             {
-                GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = true;
+                GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = false;
                 showMenu = false;
                 MenuText.SetActive(false);
                 MenuPanel.SetActive(false);
@@ -212,7 +212,7 @@ public class PlayerMovement : MonoBehaviour
             // Make the second button.
             if (GUI.Button(new Rect(840, 530, 400, 50), "Differential Control Mode",customButton))
             {
-                GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = false;
+                GameObject.FindGameObjectWithTag("CameraInput").GetComponent<CameraMovement>().easyMode = true;
                 showMenu = false;
                 MenuText.SetActive(false);
                 MenuPanel.SetActive(false);
