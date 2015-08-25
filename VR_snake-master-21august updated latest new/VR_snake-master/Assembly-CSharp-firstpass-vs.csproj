@@ -210,7 +210,7 @@
  <HintPath>F:/Program files F/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="TDx.TDxInput">
- <HintPath>F:/pvj files/vr project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/SpaceNavigator/Plugins/TDx.TDxInput.dll</HintPath>
+ <HintPath>F:/pvj files/github repo/vr-3D-SNAKE-project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/SpaceNavigator/Plugins/TDx.TDxInput.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>F:/Program files F/unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

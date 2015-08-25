@@ -150,16 +150,16 @@
  <HintPath>F:/Program files F/unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="TDx.TDxInput">
- <HintPath>F:/pvj files/vr project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/SpaceNavigator/Plugins/TDx.TDxInput.dll</HintPath>
+ <HintPath>F:/pvj files/github repo/vr-3D-SNAKE-project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/SpaceNavigator/Plugins/TDx.TDxInput.dll</HintPath>
  </Reference>
  <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
- <HintPath>F:/pvj files/vr project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+ <HintPath>F:/pvj files/github repo/vr-3D-SNAKE-project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
  </Reference>
  <Reference Include="SyntaxTree.VisualStudio.Unity.Messaging">
- <HintPath>F:/pvj files/vr project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll</HintPath>
+ <HintPath>F:/pvj files/github repo/vr-3D-SNAKE-project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll</HintPath>
  </Reference>
  <Reference Include="UnityVS.VersionSpecific">
- <HintPath>F:/pvj files/vr project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll</HintPath>
+ <HintPath>F:/pvj files/github repo/vr-3D-SNAKE-project/VR_snake-master-21august updated latest new/VR_snake-master/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>F:/Program files F/unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
